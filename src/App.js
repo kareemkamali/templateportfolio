@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+
+  Routes
+} from 'react-router-dom';
+import HomePages from './Pages/HomePages';
+import AdminPage from './Pages/AdminPage';
+
+// const HomePage = React.lazy(() =>  import('./Pages/HomePages.js'));
+// const SecondPage = React.lazy(() => import('./Pages/SecondPage.js'));
 
 function App() {
+
+  useEffect(()=>{
+navigator.geolocation.getCurrentPosition(({coords:{latitude,longitude}})=>{
+  console.log(latitude+' '+ longitude);
+})
+
+console.log('ggg');
+
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <> 
+ <Router>  
+   
+  
+   <Routes>
+
+{/* 
+   <Route path="/" exact>
+     <Redirect to='/homePage'  />
+     </Route> */}
+    <Route path='/' element={<HomePages></HomePages>} > 
+
+    </Route>
+   
+    <Route path='/admin' element={
+      <AdminPage></AdminPage>
+    }> 
+
+    </Route>
+
+   </Routes>
+  
+ </Router>
+ </>
   );
 }
+
 
 export default App;

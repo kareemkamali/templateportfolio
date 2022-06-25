@@ -1,0 +1,30 @@
+.email_contact_Left{
+    position: fixed;
+    bottom: 0;
+    width: 50px;
+    right: 50px;
+    left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    a{
+        color: #fff;
+        text-decoration: none;
+        writing-mode: vertical-rl;
+        letter-spacing: .18em;
+        padding: 10px 0;
+        font-family: var(--InterFont);
+        font-size: 12px;
+    }
+    
+}
+.email_contact_Left::after{
+
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #fff;
+}

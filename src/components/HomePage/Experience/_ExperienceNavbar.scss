@@ -1,0 +1,55 @@
+.react-tabs{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+
+}
+.experience_nav_item{
+ list-style: none;
+ padding: 0;
+ margin: 0;
+ margin-right: 200px;
+ li{
+padding-left: 50px;
+padding-bottom: 20px;
+border: none;
+border-left: 5px solid #ffffff;
+transition: all .5 ease-in-out;
+cursor: pointer;
+
+
+
+ }
+} 
+  .react-tabs__tab--selected{
+    outline: none;
+      border: none;
+    border-left: 5px solid var(--SecondColor) !important;
+    h1{
+        color: var(--SecondColor);
+  
+    }
+  
+}
+
+.panel_container{
+  
+    .job_desc{
+        padding-top: 25px;
+      
+    }
+}
+
+
+@media screen and(max-width:767px) {
+    
+   
+    .react-tabs{
+        display: flex;
+        flex-direction: column;
+  
+    }
+    .panel_container{
+        margin-top: 50px;
+    }
+}

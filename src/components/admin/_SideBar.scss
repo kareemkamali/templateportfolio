@@ -1,0 +1,23 @@
+
+
+.admin_list_items{
+background-color: var(--SecondColor);
+display: flex;
+flex-direction: column;
+position: fixed;
+z-index: -1;
+justify-content: center;
+gap: 100px;
+align-items: center;
+padding: 0;
+margin: 0;
+height: 100vh;
+width: 200px;
+a{
+    list-style: none;
+    color:var(--ColorLight);
+    text-decoration: none;
+}
+
+
+}

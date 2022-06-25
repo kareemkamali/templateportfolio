@@ -1,0 +1,42 @@
+.main-navigation{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 50px;
+    z-index: 100;
+a{text-decoration: none;}
+    .logo{
+     
+        width: 47px;
+        height: 47px;
+        display: flex;
+        align-items: center;
+      justify-content: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-family: var(--InterFont);
+        font-size: 25px;
+        color: var(--SecondColor);
+        font-weight: 400;
+       
+        background-image:url('./assets/Icons/ShapeLogo.svg');
+     
+        
+
+}
+
+
+
+}
+.nav-container{
+ 
+    display: flex;
+  .flex-navlinks{
+      align-items: center;  
+      justify-content: space-between;
+      display: flex;
+      padding: 10px 0px;
+  }
+}

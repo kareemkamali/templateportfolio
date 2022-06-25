@@ -1,0 +1,36 @@
+.experience_section{
+    position: relative;
+    padding: 0 200px;
+margin-top: 200px;
+    h3{
+ 
+        span{
+            color: var(--SecondColor);
+            
+        }
+     
+        color: #ffffff;
+      
+    }
+
+}
+.experience_container{
+    display: flex;
+}
+  
+@media screen and(max-width:768px) {
+
+    .experience_section{
+        padding: 0 50px;
+        margin-top: 125px;
+    }  
+    
+}
+
+@media screen and(max-width:767px){
+    .about_section{
+        padding: 0 20px;
+        margin-top: 75px;
+            }    
+    
+}

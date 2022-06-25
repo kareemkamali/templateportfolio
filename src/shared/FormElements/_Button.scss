@@ -1,0 +1,14 @@
+.Button{
+    border:2px solid var(--SecondColor);
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 5px;
+    color: var(--SecondColor);
+    width: fit-content;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: var(--FiraFont);
+
+
+}

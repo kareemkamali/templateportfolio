@@ -1,0 +1,63 @@
+  h1{
+    font-family: var(--FiraFont);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 450;
+    margin: 0;
+}
+h2{
+    font-family: var(--InterFont);
+    color: var(--SecondColor);
+    font-size: 75px;
+    font-weight: 600;
+    margin: 0;
+}
+ h3 {
+    font-family: var(--FiraFont);
+    color: var(--SecondColor);
+    font-size: 32px;
+    font-weight: 450;
+    margin: 0;
+}
+  p {
+    font-family: var(--InterFont);
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0;
+}
+
+@media screen and(max-width:768px) {
+h2{
+      
+        font-size: 48px;
+      
+    }
+
+      p {
+      
+        font-size: 16px;
+      
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    h2{
+      
+        font-size: 24px;
+      
+    }
+      p {
+      
+        font-size: 14px;
+      
+    }
+      h3 {
+      
+        font-size: 24px;
+      
+    }
+    
+    
+}

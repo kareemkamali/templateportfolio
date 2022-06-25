@@ -1,0 +1,30 @@
+.social-media-icons{
+    position: fixed;
+    bottom: 0;
+    width: 50px;
+    left: 50px;
+    right: auto;
+   
+    
+}
+.icons-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding:  0;
+    margin: 0;
+
+    li{
+        padding: 10px 0;
+    }
+}
+.icons-list::after{
+ 
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: #fff;
+}
